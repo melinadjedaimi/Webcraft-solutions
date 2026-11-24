@@ -62,6 +62,37 @@ a {
   background: #453d35;
 }
 
+/* ---------- Recherche et filtres ---------- */
+.filters-container {
+  padding: 16px;
+  margin-bottom: 24px;
+  border: 1px solid var(--bordure);
+  border-radius: var(--rayon);
+  background: var(--fond);
+}
+
+.filter-input {
+  border-color: var(--bordure);
+  border-radius: var(--rayon);
+}
+
+.filter-input:focus {
+  border-color: var(--accent);
+  box-shadow: none;
+}
+
+.results-count {
+  color: var(--gris);
+}
+
+.btn-reset {
+  padding: 6px 14px;
+  border: 1px solid var(--bordure);
+  border-radius: 20px;
+  background: var(--blanc);
+  color: var(--gris);
+}
+
 /* ---------- Hero ---------- */
 .hero {
   padding: 110px 0;

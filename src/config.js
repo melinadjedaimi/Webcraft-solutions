@@ -9,9 +9,6 @@ export const API_COURSES_URL = `${API_BASE_URL}/courses.json`
 // Nom du site (utilisé dans le header et le footer)
 export const SITE_NAME = 'WebCraft Solutions'
 
-// Valeur du filtre "aucune sélection" dans les listes déroulantes
-export const ALL_OPTION = 'Tous'
-
 // Liens de navigation du header
 export const NAV_LINKS = [
   { path: '/', label: 'Accueil' },
