@@ -93,6 +93,127 @@ a {
   color: var(--gris);
 }
 
+/* ---------- Sections ---------- */
+.section-beige {
+  background: var(--fond);
+}
+
+.section-label,
+.tech-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  color: #72583f;
+  background: var(--beige);
+  font-size: 0.85rem;
+}
+
+.section-title {
+  margin: 10px 0;
+  font-size: 1.75rem;
+}
+
+.section-subtitle {
+  max-width: 560px;
+  margin: 0 auto;
+  color: var(--gris);
+}
+
+/* ---------- Cartes (projets et formations) ---------- */
+.catalog-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--bordure);
+  border-radius: var(--rayon);
+  background: var(--blanc);
+  transition: box-shadow 0.2s;
+}
+
+.catalog-card:hover {
+  box-shadow: 0 4px 14px #39342e22;
+}
+
+.catalog-card-img-wrapper {
+  position: relative;
+  height: 190px;
+}
+
+.catalog-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.catalog-badge {
+  position: absolute;
+  top: 10px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  color: var(--blanc);
+  background: #39342ecc;
+  font-size: 0.75rem;
+}
+
+.catalog-badge-left {
+  left: 10px;
+}
+
+.catalog-badge-right {
+  right: 10px;
+  background: var(--accent);
+}
+
+.catalog-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.catalog-card-title {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.card-meta {
+  color: var(--gris);
+  font-size: 0.85rem;
+}
+
+/* Description limitée à 3 lignes */
+.card-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+  color: var(--gris);
+  font-size: 0.9rem;
+}
+
+/* ---------- Modal ---------- */
+.custom-modal {
+  overflow: hidden;
+  border: 0;
+}
+
+.custom-modal .modal-header {
+  color: var(--blanc);
+  background: var(--brun);
+}
+
+.custom-modal .modal-footer {
+  background: var(--fond);
+}
+
+.modal-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
 /* ---------- Hero ---------- */
 .hero {
   padding: 110px 0;
