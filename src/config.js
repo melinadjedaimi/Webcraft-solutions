@@ -12,6 +12,13 @@ export const SITE_NAME = 'WebCraft Solutions'
 // Image affichée si l'image d'un projet ou d'une formation ne charge pas
 export const FALLBACK_IMAGE = 'https://placehold.co/800x400/9a7658/ffffff?text=WebCraft'
 
+// Classe CSS du badge selon le niveau d'une formation
+export const LEVEL_CLASSES = {
+  Débutant: 'level-debutant',
+  Intermédiaire: 'level-intermediaire',
+  Avancé: 'level-avance',
+}
+
 // Liens de navigation du header
 export const NAV_LINKS = [
   { path: '/', label: 'Accueil' },
