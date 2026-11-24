@@ -77,10 +77,18 @@ export const PERSONAL_FIELDS = [
   },
 ]
 
-// Liens de navigation du header
+// Liens de navigation du header et du footer (highlight = affiché comme un bouton)
 export const NAV_LINKS = [
-  { path: '/', label: 'Accueil' },
-  { path: '/projets', label: 'Projets' },
-  { path: '/formations', label: 'Formations' },
-  { path: '/inscription', label: 'Inscription' },
+  { path: '/', label: 'Accueil', icon: 'bi-house-door' },
+  { path: '/projets', label: 'Projets', icon: 'bi-briefcase' },
+  { path: '/formations', label: 'Formations', icon: 'bi-mortarboard' },
+  { path: '/inscription', label: 'Inscription', icon: 'bi-person-plus', highlight: true },
 ]
+
+// Coordonnées affichées dans le footer
+export const CONTACT = {
+  address: '15 rue de la Tech, 75001 Paris',
+  email: 'contact@webcraft.fr',
+  phone: '+33 1 23 45 67 89',
+  phoneLink: '+33123456789',
+}

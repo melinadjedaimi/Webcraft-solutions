@@ -1,9 +1,8 @@
+import ProjectsSection from '../components/ProjectsSection'
+
+// Page dédiée aux projets : on réutilise la même section que sur l'accueil
 function ProjectsPage() {
-  return (
-    <div className="container py-5">
-      <h1>Nos projets</h1>
-    </div>
-  )
+  return <ProjectsSection />
 }
 
 export default ProjectsPage

@@ -1,9 +1,8 @@
+import CoursesSection from '../components/CoursesSection'
+
+// Page dédiée aux formations : on réutilise la même section que sur l'accueil
 function CoursesPage() {
-  return (
-    <div className="container py-5">
-      <h1>Nos formations</h1>
-    </div>
-  )
+  return <CoursesSection />
 }
 
 export default CoursesPage

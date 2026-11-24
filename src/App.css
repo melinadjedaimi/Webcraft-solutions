@@ -57,9 +57,55 @@ a {
   background: #ffffff20;
 }
 
+.brand-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--rayon);
+  color: var(--blanc);
+  background: var(--accent);
+}
+
+.brand-accent {
+  color: #ead8bd;
+}
+
+/* Le lien "Inscription" est affiché comme un bouton */
+.site-header .nav-pill {
+  padding-right: 16px;
+  padding-left: 16px;
+  border-radius: 20px;
+  background: var(--accent);
+}
+
 .site-footer {
   color: #d4cabe;
   background: #453d35;
+}
+
+.site-footer a {
+  color: #d4cabe;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--blanc);
+  text-decoration: underline;
+}
+
+.footer-heading {
+  color: var(--blanc);
+}
+
+.footer-divider {
+  border-color: #ffffff30;
+}
+
+/* Les sections ne passent pas sous le header collé en haut quand on clique sur une ancre */
+section[id] {
+  scroll-margin-top: 70px;
 }
 
 /* ---------- Recherche et filtres ---------- */
@@ -465,5 +511,61 @@ a {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 767px) {
+  .hero {
+    padding: 64px 0;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .filters-container {
+    padding: 12px;
+  }
+
+  /* Compteur de résultats et bouton "Réinitialiser" sur deux lignes si besoin */
+  .filters-container > .d-flex {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .catalog-card-img-wrapper {
+    height: 170px;
+  }
+
+  .modal-img {
+    height: 160px;
+  }
+
+  .inscription-header {
+    padding: 40px 0 28px;
+  }
+
+  .inscription-title {
+    font-size: 1.5rem;
+  }
+
+  .form-section {
+    padding: 16px 14px;
+  }
+
+  .form-card-header,
+  .form-submit-area {
+    padding: 14px;
+  }
+
+  /* Le menu déplié occupe toute la largeur : on espace les liens */
+  .site-header .nav-link {
+    padding: 10px 12px;
+  }
+
+  .site-header .nav-pill {
+    display: inline-block;
+    margin-top: 6px;
   }
 }
