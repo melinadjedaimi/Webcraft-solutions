@@ -19,6 +19,64 @@ export const LEVEL_CLASSES = {
   Avancé: 'level-avance',
 }
 
+// Niveaux proposés dans le formulaire d'inscription
+export const LEVELS = ['Débutant', 'Intermédiaire', 'Avancé']
+
+// Longueur minimale du message de motivation
+export const MOTIVATION_MIN_LENGTH = 50
+
+// Valeurs de départ du formulaire d'inscription
+export const INSCRIPTION_INITIAL_VALUES = {
+  prenom: '',
+  nom: '',
+  email: '',
+  telephone: '',
+  entreprise: '',
+  experience: '',
+  formation: '',
+  niveau: '',
+  motivation: '',
+  rgpd: false,
+}
+
+// Champs "Informations personnelles" du formulaire d'inscription
+export const PERSONAL_FIELDS = [
+  { name: 'prenom', label: 'Prénom', icon: 'bi-person', required: true, placeholder: 'Votre prénom' },
+  { name: 'nom', label: 'Nom', icon: 'bi-person', required: true, placeholder: 'Votre nom de famille' },
+  {
+    name: 'email',
+    label: 'Adresse email',
+    type: 'email',
+    icon: 'bi-envelope',
+    required: true,
+    placeholder: 'exemple@email.com',
+  },
+  {
+    name: 'telephone',
+    label: 'Téléphone',
+    type: 'tel',
+    icon: 'bi-telephone',
+    required: true,
+    placeholder: '+33 6 12 34 56 78',
+    hint: 'Format international requis : +33 6 XX XX XX XX',
+  },
+  {
+    name: 'entreprise',
+    label: 'Entreprise',
+    icon: 'bi-building',
+    optional: true,
+    placeholder: 'Nom de votre entreprise',
+  },
+  {
+    name: 'experience',
+    label: "Années d'expérience",
+    type: 'number',
+    icon: 'bi-briefcase',
+    optional: true,
+    placeholder: 'Ex : 3',
+  },
+]
+
 // Liens de navigation du header
 export const NAV_LINKS = [
   { path: '/', label: 'Accueil' },

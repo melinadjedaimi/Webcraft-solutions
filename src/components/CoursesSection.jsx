@@ -63,7 +63,7 @@ function CoursesSection() {
         values={filters}
         onChange={setFilter}
         onReset={resetAll}
-        resultText={formatResultCount(results.length, 'formation')}
+        resultText={formatResultCount(results.length, 'formation', true)}
       >
         <SearchBar
           value={searchTerm}

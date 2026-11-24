@@ -276,6 +276,147 @@ a {
   object-fit: cover;
 }
 
+/* ---------- Page d'inscription ---------- */
+.inscription-header {
+  padding: 56px 0 40px;
+  color: #eee8df;
+  background: var(--brun);
+}
+
+.inscription-title {
+  margin: 12px 0;
+  color: var(--blanc);
+  font-size: 2rem;
+}
+
+.form-card {
+  overflow: hidden;
+  border: 1px solid var(--bordure);
+  border-radius: var(--rayon);
+  background: var(--blanc);
+}
+
+.form-card-header,
+.form-submit-area {
+  padding: 20px;
+  background: var(--fond);
+}
+
+.form-section {
+  padding: 22px 20px;
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid var(--bordure);
+}
+
+.form-section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.section-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: var(--blanc);
+  background: var(--accent);
+  font-size: 0.85rem;
+}
+
+.input-group-custom {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: var(--gris);
+  pointer-events: none;
+}
+
+.custom-input {
+  padding-left: 36px;
+  border-color: var(--bordure);
+  border-radius: var(--rayon);
+}
+
+.custom-input:focus {
+  border-color: var(--accent);
+  box-shadow: none;
+}
+
+.custom-textarea {
+  min-height: 120px;
+  padding-left: 12px;
+  resize: vertical;
+}
+
+.field-hint {
+  color: var(--gris);
+  font-size: 0.85rem;
+}
+
+.field-error {
+  min-height: 20px;
+  color: var(--rouge);
+  font-size: 0.85rem;
+}
+
+.char-counter {
+  color: var(--gris);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.char-counter.reached {
+  color: var(--vert);
+}
+
+.form-check-input:checked {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.success-banner {
+  padding: 32px 20px;
+  border: 1px solid #cbdac8;
+  border-radius: 10px;
+  background: #f0f5ee;
+  text-align: center;
+}
+
+.success-icon {
+  color: var(--vert);
+  font-size: 2.5rem;
+}
+
+.info-sidebar {
+  position: sticky;
+  top: 80px;
+  display: grid;
+  gap: 14px;
+}
+
+.info-card {
+  padding: 16px;
+  border: 1px solid var(--bordure);
+  border-radius: var(--rayon);
+  background: var(--blanc);
+}
+
+.info-card-icon {
+  color: var(--accent);
+  font-size: 1.4rem;
+}
+
 /* ---------- Hero ---------- */
 .hero {
   padding: 110px 0;

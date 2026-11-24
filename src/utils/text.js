@@ -1,13 +1,15 @@
 /**
- * Construit le texte du nombre de résultats ("1 projet trouvé", "3 projets trouvés").
+ * Construit le texte du nombre de résultats ("1 projet trouvé", "3 formations trouvées").
  * @param {number} count - Nombre de résultats
  * @param {string} noun - Le nom au singulier ("projet", "formation")
+ * @param {boolean} [isFeminine=false] - true si le nom est féminin (accord de "trouvé")
  * @returns {string} Le texte à afficher
  */
-export function formatResultCount(count, noun) {
+export function formatResultCount(count, noun, isFeminine = false) {
   if (count === 0) return 'Aucun résultat'
   const plural = count > 1 ? 's' : ''
-  return `${count} ${noun}${plural} trouvé${plural}`
+  const feminine = isFeminine ? 'e' : ''
+  return `${count} ${noun}${plural} trouvé${feminine}${plural}`
 }
 
 /**
