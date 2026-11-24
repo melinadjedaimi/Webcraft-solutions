@@ -1,11 +1,28 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Home from './pages/Home'
+import ProjectsPage from './pages/ProjectsPage'
+import CoursesPage from './pages/CoursesPage'
+import InscriptionPage from './pages/InscriptionPage'
 import './App.css'
 
 function App() {
   return (
-    <div className="container py-5">
-      <h1>WebCraft Solutions</h1>
-      <p>Portail en cours de migration vers React.</p>
-    </div>
+    <BrowserRouter>
+      <div className="app d-flex flex-column min-vh-100">
+        <Header />
+        <main className="flex-grow-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projets" element={<ProjectsPage />} />
+            <Route path="/formations" element={<CoursesPage />} />
+            <Route path="/inscription" element={<InscriptionPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   )
 }
 
