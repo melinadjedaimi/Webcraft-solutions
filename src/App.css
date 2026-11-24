@@ -1,1 +1,114 @@
-/* Styles globaux du portail WebCraft Solutions */
+/* Styles globaux du portail WebCraft Solutions (charte reprise de l'E1) */
+
+:root {
+  --fond: #faf8f4;
+  --blanc: #fffefa;
+  --beige: #eee7dc;
+  --accent: #9a7658;
+  --brun: #76624f;
+  --texte: #39342e;
+  --gris: #7b746c;
+  --bordure: #e7e0d6;
+  --vert: #54745b;
+  --rouge: #b6534b;
+  --rayon: 8px;
+
+  /* On remplace le bleu de Bootstrap par la couleur d'accent */
+  --bs-primary: #9a7658;
+  --bs-primary-rgb: 154, 118, 88;
+  --bs-body-color: #39342e;
+  --bs-body-font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--blanc);
+}
+
+a {
+  color: var(--accent);
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--accent);
+  --bs-btn-border-color: var(--accent);
+  --bs-btn-hover-bg: #85654a;
+  --bs-btn-hover-border-color: #85654a;
+  --bs-btn-active-bg: #85654a;
+  --bs-btn-active-border-color: #85654a;
+}
+
+/* ---------- Header et footer ---------- */
+.site-header {
+  background: var(--brun);
+}
+
+.site-header .nav-link {
+  color: #f8f3eb;
+  border-radius: var(--rayon);
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link.active {
+  color: var(--blanc);
+  background: #ffffff20;
+}
+
+.site-footer {
+  color: #d4cabe;
+  background: #453d35;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  padding: 110px 0;
+  background: linear-gradient(135deg, var(--brun), var(--accent), var(--brun));
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+}
+
+.hero-highlight {
+  color: #ead8bd;
+}
+
+.hero-title,
+.hero-text,
+.hero-buttons {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero-text {
+  max-width: 640px;
+  animation-delay: 0.3s;
+}
+
+.hero-buttons {
+  animation-delay: 0.6s;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
